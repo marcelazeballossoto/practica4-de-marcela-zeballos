@@ -1,0 +1,15 @@
+﻿@model LABORATORIO1.Models.ARITMETICA
+
+@{
+    ViewBag.Title = "restar";
+}
+
+<h2>restar</h2>
+@using(@Html.BeginForm())
+{
+   @Html.TextBoxFor(x=>x.primero);
+   @Html.TextBoxFor(x=>x.segundo);
+   
+    <input type="submit" value="calcular"/>                             
+}
+@ViewBag.resultado;
